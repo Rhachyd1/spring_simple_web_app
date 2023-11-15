@@ -8,19 +8,23 @@ import org.springframework.stereotype.Component;
 
 import com.rhd.spring6simplewebapp.domain.Author;
 import com.rhd.spring6simplewebapp.domain.Book;
+import com.rhd.spring6simplewebapp.domain.Publisher;
 import com.rhd.spring6simplewebapp.repository.AuthorRepository;
 import com.rhd.spring6simplewebapp.repository.BookRepository;
+import com.rhd.spring6simplewebapp.repository.PublisherRepository;
 
 @Component
 public class BootstrapData implements CommandLineRunner{
 
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
+    private final PublisherRepository publisherRepository;
 
     @Autowired
-    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository) {
+    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
+        this.publisherRepository = publisherRepository;
     }
 
 
@@ -54,6 +58,13 @@ public class BootstrapData implements CommandLineRunner{
 
        authorRepository.save(ericSaved);
        authorRepository.save(johnSaved);
+
+       Publisher publisher1 = new Publisher();
+       publisher1.setAddress("An Address");
+       publisher1.setCity("in a City");
+       publisher1.setState("in a State");
+       publisher1.setPublisherName("TestPublisher");
+       publisher1.setZip("00000-000");
 
        System.out.println("Bootstrap!");
        System.out.println("Author: "+authorRepository.count());
