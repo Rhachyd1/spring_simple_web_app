@@ -2,12 +2,11 @@ package com.rhd.spring6simplewebapp.domain;
 
 import java.util.Set;
 
-import org.hibernate.annotations.ManyToAny;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 
 @Entity
 public class Author {
@@ -19,7 +18,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
-    @ManyToAny
+    @ManyToMany(mappedBy="authors")
     Set<Book> books;
 
     public Author() {
@@ -70,4 +69,5 @@ public class Author {
                 + books + "]";
     }
 
+    
 }
