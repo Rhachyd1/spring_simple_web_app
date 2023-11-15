@@ -42,8 +42,8 @@ public class BootstrapData implements CommandLineRunner{
        Book newBookSaved = bookRepository.save(newBook);
 
        Author john = new Author();
-       eric.setFirstName("John");
-       eric.setLastName("Evans");
+       john.setFirstName("John");
+       john.setLastName("Evans");
 
        Book newBook2 = new Book();
        newBook2.setTitle("Domain Driven Design");
@@ -56,8 +56,13 @@ public class BootstrapData implements CommandLineRunner{
        ericSaved.getBooks().add(newBookSaved);
        johnSaved.getBooks().add(book2Saved);
 
+       newBookSaved.getAuthors().add(eric);
+       book2Saved.getAuthors().add(john);
+
        authorRepository.save(ericSaved);
        authorRepository.save(johnSaved);
+       bookRepository.save(book2Saved);
+       bookRepository.save(newBookSaved);
 
        Publisher publisher1 = new Publisher();
        publisher1.setAddress("An Address");
@@ -66,9 +71,17 @@ public class BootstrapData implements CommandLineRunner{
        publisher1.setPublisherName("TestPublisher");
        publisher1.setZip("00000-000");
 
+       
+
+       Publisher savedPublisher = publisherRepository.save(publisher1);
+       savedPublisher.getPublishedBooks().add(book2Saved);
+       savedPublisher.getPublishedBooks().add(newBookSaved);
+
+
        System.out.println("Bootstrap!");
        System.out.println("Author: "+authorRepository.count());
        System.out.println("Book: "+bookRepository.count());
+       System.out.println("Publishers: "+publisherRepository.count());
     }
     
 }
