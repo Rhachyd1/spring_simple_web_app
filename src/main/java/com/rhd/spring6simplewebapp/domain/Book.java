@@ -1,5 +1,6 @@
 package com.rhd.spring6simplewebapp.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -25,6 +26,7 @@ public class Book {
     private Set<Author> authors;
 
     public Book() {
+        this.authors = new HashSet<>();
     }
 
     public Book(Long id, String title, String isbn, Set<Author> authors) {

@@ -6,5 +6,5 @@ import com.rhd.spring6simplewebapp.domain.Author;
 
 /* <TypeDomain, TypeId> */
 public interface AuthorRepository extends CrudRepository<Author, Long> {
-    Author findByName(String name);
+    Author findByFirstName(String name);
 }
