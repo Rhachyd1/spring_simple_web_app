@@ -1,1 +1,11 @@
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/services/BookServiceImpl.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/repository/PublisherRepository.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/controller/BookController.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/domain/Author.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/repository/AuthorRepository.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/domain/Publisher.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/services/BookService.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/repository/BookRepository.java
 /home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/Spring6SimplewebappApplication.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/domain/Book.java
+/home/rhd/Dev/Java/SpringBoot/learning_spring/src/main/java/com/rhd/spring6simplewebapp/boostrap/BootstrapData.java
