@@ -1,8 +1,5 @@
 package com.rhd.spring6simplewebapp.boostrap;
 
-import java.util.Random;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -20,7 +17,7 @@ public class BootstrapData implements CommandLineRunner{
     private final BookRepository bookRepository;
     private final PublisherRepository publisherRepository;
 
-    @Autowired
+
     public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
