@@ -1,13 +1,13 @@
-package com.rhd.spring6simplewebapp;
+package com.rhd.spring6.projectdependencyinjection.dependency_injection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring6SimplewebappApplication {
+public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring6SimplewebappApplication.class, args);
+		SpringApplication.run(DependencyInjectionApplication.class, args);
 	}
 
 }

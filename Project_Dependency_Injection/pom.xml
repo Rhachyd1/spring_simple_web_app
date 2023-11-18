@@ -8,29 +8,20 @@
 		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.rhd</groupId>
-	<artifactId>spring-6-simplewebapp</artifactId>
+	<groupId>com.rhd.spring6.projectdependencyinjection</groupId>
+	<artifactId>dependency_injection</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-6-simplewebapp</name>
-	<description>Simple web app with thymeleaf</description>
+	<name>dependency_injection</name>
+	<description>Dependency Injection class</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

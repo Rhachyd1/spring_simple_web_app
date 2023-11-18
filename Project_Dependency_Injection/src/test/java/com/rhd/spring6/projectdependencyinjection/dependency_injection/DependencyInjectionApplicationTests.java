@@ -1,10 +1,10 @@
-package com.rhd.spring6simplewebapp;
+package com.rhd.spring6.projectdependencyinjection.dependency_injection;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Spring6SimplewebappApplicationTests {
+class DependencyInjectionApplicationTests {
 
 	@Test
 	void contextLoads() {
