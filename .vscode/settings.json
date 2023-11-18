@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "Project_Dependency_Injection/src/main",
+        "Project_Dependency_Injection/src/test"
+    ]
+}
