@@ -1,1 +1,14 @@
+com/rhd/spring6simplewebapp/services/BookService.class
+com/rhd/spring6simplewebapp/domain/Book.class
 com/rhd/spring6simplewebapp/Spring6SimplewebappApplication.class
+com/rhd/spring6simplewebapp/controller/BookController.class
+com/rhd/spring6simplewebapp/services/AuthorService.class
+com/rhd/spring6simplewebapp/controller/AuthorController.class
+com/rhd/spring6simplewebapp/repository/AuthorRepository.class
+com/rhd/spring6simplewebapp/domain/Publisher.class
+com/rhd/spring6simplewebapp/services/AuthorServiceimpl.class
+com/rhd/spring6simplewebapp/boostrap/BootstrapData.class
+com/rhd/spring6simplewebapp/repository/PublisherRepository.class
+com/rhd/spring6simplewebapp/domain/Author.class
+com/rhd/spring6simplewebapp/repository/BookRepository.class
+com/rhd/spring6simplewebapp/services/BookServiceImpl.class
