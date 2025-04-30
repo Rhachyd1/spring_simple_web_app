@@ -1,1 +1,3 @@
-Fix dockerfile.
+To Do
+
+fix dockerfile properly
